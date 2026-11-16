@@ -1,0 +1,203 @@
+<!-- NAVBAR -->
+<header>
+    <title>Portofolio saya</title>
+    <div class="nav-container">
+        <div class="brand">[NAMA ANDA]</div>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#galeri">Galeri Karya</a></li>
+                <li><a href="#pameran">Pameran</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </div>
+    <link rel="stylesheet" href="style.css">
+</header>
+
+<!-- PROFIL SENIMAN (HERO SECTION WITH PHOTO) -->
+<section class="artist-hero" id="profil">
+    <div class="artist-photo-container">
+        <div class="artist-photo-frame">
+            <!-- Ganti link gambar ini dengan lokasi foto diri Anda -->
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800" alt="Foto Profil Pelukis">
+        </div>
+        <div class="photo-tag">Studio & Kanvas</div>
+    </div>
+
+    <div class="artist-bio">
+        <span class="artist-label">Seniman Lukis / Fine Artist</span>
+        <h1 class="artist-name">[Nama Lengkap Anda]</h1>
+        
+        <p class="artist-statement">
+            "Melalui perpaduan tekstur, garis, dan warna, saya berusaha mengeksplorasi batas antara perasaan manusia, memori, dan keindahan alam."
+        </p>
+
+        <p class="artist-description">
+            Berbasis di [Kota Anda], saya berfokus pada media lukis cat minyak dan akrilik. Setiap karya diciptakan dengan pendekatan intuitif untuk membangun koneksi emosional dengan penikmat seni.
+        </p>
+
+        <div class="artist-stats">
+            <div class="stat-item">
+                <h4>8+</h4>
+                <p>Tahun Berkarya</p>
+            </div>
+            <div class="stat-item">
+                <h4>45+</h4>
+                <p>Lukisan Terkoleksi</p>
+            </div>
+            <div class="stat-item">
+                <h4>12</h4>
+                <p>Pameran Seni</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALERI KARYA UTAMA -->
+<section class="gallery-section" id="galeri">
+    <div class="section-header">
+        <h2>Koleksi Lukisan Pilihan</h2>
+        <p>Jelajahi karya seni asli. Klik pada gambar untuk memperbesar pratinjau detail lukisan.</p>
+    </div>
+
+    <!-- FILTER KATEGORI -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">Semua Karya</button>
+        <button class="filter-btn" data-filter="oil">Cat Minyak</button>
+        <button class="filter-btn" data-filter="acrylic">Akrilik</button>
+        <button class="filter-btn" data-filter="watercolor">Cat Air</button>
+    </div>
+
+    <!-- GRID GALERI -->
+    <div class="gallery-grid">
+
+        <!-- Karya 1 -->
+        <article class="art-card" data-category="oil">
+            <div class="art-img-wrapper" onclick="openModal('https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&q=80&w=1000')">
+                <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&q=80&w=800" alt="Goresan Fajar" class="art-img">
+                <div class="art-overlay">
+                    <span class="overlay-text">🔍 Perbesar Lukisan</span>
+                </div>
+            </div>
+            <div class="art-info">
+                <h3 class="art-title">Goresan Fajar</h3>
+                <p class="art-meta">Cat Minyak di Kanvas | 100 x 120 cm (2025)</p>
+                <p class="art-desc">Eksplorasi ketenangan suasana pagi hari melalui perpaduan gradasi warna hangat dan sapuan kuas berlapis.</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20lukisan%20'Goresan%20Fajar'" target="_blank" class="btn-inquire">Tanyakan Karya ini</a>
+            </div>
+        </article>
+
+        <!-- Karya 2 -->
+        <article class="art-card" data-category="acrylic">
+            <div class="art-img-wrapper" onclick="openModal('https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000')">
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=800" alt="Harmoni Abstrak" class="art-img">
+                <div class="art-overlay">
+                    <span class="overlay-text">🔍 Perbesar Lukisan</span>
+                </div>
+            </div>
+            <div class="art-info">
+                <h3 class="art-title">Harmoni Abstrak</h3>
+                <p class="art-meta">Akrilik di Kanvas | 80 x 80 cm (2024)</p>
+                <p class="art-desc">Refleksi dinamika kehidupan perkotaan yang dituangkan dalam komposisi garis tegas dan tekstur tebal.</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20lukisan%20'Harmoni%20Abstrak'" target="_blank" class="btn-inquire">Tanyakan Karya ini</a>
+            </div>
+        </article>
+
+        <!-- Karya 3 -->
+        <article class="art-card" data-category="watercolor">
+            <div class="art-img-wrapper" onclick="openModal('https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&q=80&w=1000')">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&q=80&w=800" alt="Bayang & Sunyi" class="art-img">
+                <div class="art-overlay">
+                    <span class="overlay-text">🔍 Perbesar Lukisan</span>
+                </div>
+            </div>
+            <div class="art-info">
+                <h3 class="art-title">Bayang & Sunyi</h3>
+                <p class="art-meta">Cat Air di Kertas | 50 x 70 cm (2024)</p>
+                <p class="art-desc">Menggunakan teknik transparent wash untuk menciptakan efek kedalaman, keheningan, dan perasaan nostalgia.</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20lukisan%20'Bayang%20%26%20Sunyi'" target="_blank" class="btn-inquire">Tanyakan Karya ini</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- REKAM JEJAK & PAMERAN -->
+<section class="exhibitions-section" id="pameran">
+    <div class="exhibitions-container">
+        <div class="section-header" style="text-align: left; margin-bottom: 1.5rem;">
+            <h2>Rekam Jejak & Pameran</h2>
+            <p>Riwayat pameran seni rupa dan kegiatan pameran publik.</p>
+        </div>
+
+        <div class="exhibition-list">
+            <div class="exhibition-item">
+                <div class="exhibition-year">2025</div>
+                <div>
+                    <div class="exhibition-title">Pameran Bersama "Warna Nusantara"</div>
+                    <div class="exhibition-venue">Galeri Nasional Indonesia, Jakarta</div>
+                </div>
+                <div class="exhibition-type">Pameran Bersama</div>
+            </div>
+
+            <div class="exhibition-item">
+                <div class="exhibition-year">2024</div>
+                <div>
+                    <div class="exhibition-title">Pameran Tunggal "Jejak Jiwa"</div>
+                    <div class="exhibition-venue">Taman Ismail Marzuki, Jakarta</div>
+                </div>
+                <div class="exhibition-type">Pameran Tunggal</div>
+            </div>
+
+            <div class="exhibition-item">
+                <div class="exhibition-year">2023</div>
+                <div>
+                    <div class="exhibition-title">Festival Seni Rupa Kontemporer</div>
+                    <div class="exhibition-venue">Gedung Kesenian, Yogyakarta</div>
+                </div>
+                <div class="exhibition-type">Festival</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER & KONTAK -->
+<footer id="kontak">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h3>[Nama Anda]</h3>
+            <p>Terbuka untuk kolaborasi pameran, komisi lukisan khusus, dan koleksi pribadi.</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Studio / Kontak</h4>
+            <ul class="footer-links">
+                <li><a href="#">📍 [Kota Studio Anda, Indonesia]</a></li>
+                <li><a href="https://wa.me/6281234567890" target="_blank">📱 +62 812-3456-7890</a></li>
+                <li><a href="mailto:email@domain.com">✉️ email@domain.com</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Media Sosial</h4>
+            <ul class="footer-links">
+                <li><a href="https://instagram.com" target="_blank">Instagram Portfolio</a></li>
+                <li><a href="https://youtube.com" target="_blank">YouTube Process Video</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+        &copy; 2026 [Nama Anda]. All rights reserved. Designed for Fine Arts & Exhibitions.
+    </div>
+</footer>
+
+<!-- LIGHTBOX MODAL (PREVIEW GAMBAR BESAR) -->
+<div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="imgFull" alt="Detail Lukisan">
+</div>
+
+<!-- File JavaScript Terpisah -->
+<script src="script.js"></script>
